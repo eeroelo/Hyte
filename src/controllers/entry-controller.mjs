@@ -84,3 +84,4 @@ const deleteEntry = async (req, res) => {
 };
 
 export {getEntries, getEntryById, postEntry, putEntry, deleteEntry};
+

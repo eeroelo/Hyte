@@ -80,3 +80,4 @@ const deleteUser = async (req, res) => {
 };
 
 export {getUsers, getUserById, postUser, putUser, deleteUser};
+
