@@ -4,23 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--     <link rel="stylesheet" href="style.css"> -->
     <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/diary-BKdEZltt.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/style-BjDTY_ay.js">
-    <link rel="modulepreload" crossorigin href="/assets/fetch-CGUiTqyx.js">
-    <link rel="stylesheet" crossorigin href="/assets/style-Ce31f6xP.css">
+    <script type="module" crossorigin src="/assets/diary-BnT4QpuA.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/assets/style-D1pvzJ2m.css">
   </head>
   <body>
     <ul>
-      <li><a href="#home">Esimerkkisivusto</a></li>
-      <li><a href="#news">Tietoja</a></li>
-      <li style="float: right" class="active logout"><a href="">Logout</a></li>
+      <li><a href="#home">legal</a></li>
+      <li><a href="#news">info</a></li>
+      <li style="float: right" class="active logout"><a href="start-auth.html">Logout</a></li>
     </ul>
 
     <!-- <div id="app"></div> -->
 
-    <div class="user">Hei kirjautunut käyttäjä: <span id="name">NIMI TÄHÄN</span>!</div>
+    <div class="user">Hei kirjautunut käyttäjä: <span id="name">username</span>!</div>
 
     <h3>/api/users</h3>
 
@@ -122,14 +120,23 @@
             "email": "update4@example.com"
           }
           </code></pre>
-
-        <form class="addform">
-          <!-- tänne formi -->
+              <!-- tänne formi -->
           <!-- https://www.w3schools.com/css/css_form.asp -->
           <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding -->
 
           <!-- formin avulla testaamme create ja update user reittejä -->
+        <form class="addform">
+          <label for="username">Username</label>
+          <input type="text" id="fname" name="fname" placeholder="username">
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="New password" />
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email" placeholder="@">
+
         </form>
+        <button class="update" >Update information </button>
+
+        
       </div>
     </div>
 
