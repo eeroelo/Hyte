@@ -1,0 +1,360 @@
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    /* color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424; */
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .user{
+    margin-top: 10px;
+    background-color:gray;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .sweet_dreams{
+    background-color: lightblue;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .userDashboard{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .login_text{
+    width: 18%;
+    background-color: lightblue;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  html {
+    background: url('/Moon.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+  
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 16px;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    /* background-color: #1a1a1a; */
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: purple;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  footer{
+    padding: 10px;
+    margin-top: 50px;
+    height: 50px;
+    width: 100%;
+    background-color: #535bf2;
+    text-align: center;
+
+  }
+  /* 
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  } */
+  
+  h3 {
+    border-bottom: 1px solid rgb(184, 15, 117);
+    margin-top: 50px;
+  }
+  
+  button.del, button.check, button.update {
+    padding: 0.3rem 0.6rem;
+    margin: 0;
+  }
+  
+  button.update {
+    background-color: #f2e49448;
+  }
+  
+  button.del {
+    background-color: #f2a29448;
+  }
+  
+  ::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+  
+  /* Navigaatiolista tyylittely */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: white;
+  }
+
+  .menu_button {
+    display: block;
+    width: 250px; /* Increased width */
+    margin: 20px auto; /* Increased margin */
+    padding: 15px; /* Increased padding */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px; /* Increased border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu_button:hover {
+    background-color: #0056b3;
+}
+  
+  li a:hover:not(.active) {
+    background-color: #c83d3d;
+  }
+  
+  .active {
+    background-color: black;
+  }
+  
+  /* Käyttäjä loggaantunut tyylittely */
+  .user {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #name {
+    font-weight: bolder;
+  }
+  
+  /* Taulukon tyylittey */
+  /* https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l */
+  
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+  }
+  
+  .styled-table thead tr {
+    background-color: lightblue;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    background-color: rgb(126, 204, 230);
+      padding: 12px 15px;
+  }
+  
+
+
+  
+  .styled-table tbody tr:hover {
+    background-color: #68535358;
+    cursor: pointer;
+  }
+  .create_user_form{
+    background-color: #200998;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .login_form{
+    background-color: #200998;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .forms {
+    display:flex;
+    gap: 30px;
+  }
+
+  /* Formin tyylittely */
+  form {
+    background-color: #009879;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    width: 300px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  /* Input kenttien tyylittely */
+  input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  /* Koodiesimerkin tyylittely */
+  pre {
+    background-color: aliceblue;
+  }
+  
+  #loginResponse, #meResponse {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    display: block;
+    width: 100%;
+    word-break:break-all;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .forms {
+      flex-direction: column;
+    }
+  }
+  .styled-table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.styled-table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.forms > div {
+    width: 100%;
+}
+
+.addform {
+  background-color: purple;
+  flex: auto;
+    width: 100%;
+}
+
+.addform label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.addform input[type="text"],
+.addform input[type="password"],
+.addform input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.update {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.update:hover {
+    background-color: #45a049;
+}

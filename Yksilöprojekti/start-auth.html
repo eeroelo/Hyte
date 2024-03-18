@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<!--     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+ -->    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css">
+    <title>Vite App</title>
+  </head>
+
+  <body>
+
+      <ul>
+        
+      <li><a href="#home">Legal</a></li>
+      <li><a href="#news">Info</a></li>
+      <li style="float: right" class="active logout"><a href="start-auth.html">Logout</a></li>
+    </ul>
+    <div class="sweet_dreams">
+      <h1>Sweet Dreams.app</h1>
+  </div>
+
+  <div class="login_text">
+    <h2>New users:</h2>
+</div>
+
+<!--     <pre><code>
+      # Create user
+      POST http://127.0.0.1:3000/api/users
+      content-type: application/json
+      
+      {
+        "username": "test-update4",
+        "password": "test-pw-update4",
+        "email": "update4@example.com"
+      }
+      </code></pre> -->
+
+    <form class="create_user_form">
+      <h2>Create new user:</h2>
+      <label for="username">Username</label>
+      <input type="text" name="username" placeholder="new username" />
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="new password" />
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="email@" />
+      <input name="submit" type="submit" value="Post and log to console" class="createuser" />
+    </form>
+<!--     <h3>/api/auth - LOGIN USER</h3>
+    <pre><code>
+      # Login
+      POST http://localhost:3000/api/auth/login
+      content-type: application/json
+      
+      {
+        "username": "user",
+        "password": "secret"
+      }
+
+      
+      </code></pre> -->
+      <div class="login_text">
+        <h2>Returning users:</h2>
+    </div>
+      <form class="login_form">
+        <h2>Already registered? Login here</h2>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="username" />
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="password" />
+        <input name="submit" type="submit" value="Login and get new token" class="loginuser" />
+      </form>
+
+    <footer>
+       Copyright @Erben
+   </footer>
+   <div>
+    <button id="clearButton">Clear localStorage</button>
+    <br />
+    <code id="clearResponse"></code>
+    <div id="loginResponse"></div>
+    <div id="meResponse"></div>
+  </div>
+
+  </body>
+
+  <script type="module" src="start-auth.js"></script>
+</html>
