@@ -5,24 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/diary-BnT4QpuA.js"></script>
+    <script type="module" crossorigin src="/assets/diary-DTAsuq0D.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="stylesheet" crossorigin href="/assets/style-D1pvzJ2m.css">
+    <link rel="modulepreload" crossorigin href="/assets/fetch-CGUiTqyx.js">
+    <link rel="stylesheet" crossorigin href="/assets/style-DNseoDop.css">
   </head>
   <body>
     <ul>
-      <li><a href="#home">legal</a></li>
-      <li><a href="#news">info</a></li>
-      <li style="float: right" class="active logout"><a href="start-auth.html">Logout</a></li>
+      <li><a href="home.html">Info</a></li>
+      <li><a href="info.html">legal</a></li>
+      <li style="float: right" class="active logout"><a href="">Logout</a></li>
     </ul>
 
     <!-- <div id="app"></div> -->
 
-    <div class="user">Hei kirjautunut käyttäjä: <span id="name">username</span>!</div>
-
-    <h3>/api/users</h3>
-
-    <h3>Esimerkkitaulukko</h3>
+    <div class="user">Hei kirjautunut käyttäjä: <span id="name">NIMI TÄHÄN</span>!</div>
 
     <table class="styled-table">
       <thead>
@@ -61,25 +58,7 @@
 
     <div class="forms">
       <div style="flex: 1">
-        <h3>GET and DELETE</h3>
 
-        <p>
-          Hae käyttäjän tiedot painamalla alla olevaa nappia. Tämä hakee tiedot sekä luo taulukon
-          tbody osan. Jokaiselle riville luodaan nappula. Info hakee yksittäisen rivin tiedot ja
-          avaa dialogin. Delete poistaa yksittäisen rivin ja varmistaa tapahtuman confirm()
-          metodilla.
-        </p>
-
-        <pre><code>
-          # Get all users (requires token)
-          GET http://127.0.0.1:3000/api/users
-          
-          # Get user by id (requires token)
-          GET http://127.0.0.1:3000/api/users/:id
-          
-          # Delete user (requires token)
-          DELETE http://127.0.0.1:3000/api/users/:id
-          </code></pre>
 
         <table class="styled-table">
           <thead>
@@ -101,14 +80,20 @@
         <button class="get_users">Hae users tiedot</button>
       </div>
       <div style="flex: 1">
-        <h3>PUT and FORMS</h3>
+        <div>
+          <form class="addform">
+            <h2>Update userinfo</h2>
+            <label for="username">Username</label>
+            <input type="text" id="fname" name="fname" placeholder=" New username">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="New password" />
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="@">
+        </form>
+        <button class="update" >Update information </button>
+    </div>
 
-        <p>
-          Lisää ja päivitä käyttäjiä eli users tiedot formin avulla. Formi lisää uuden käyttäjän
-          nappulasta 'post'. Huomio, että PUT metodi toimii vain kirjatuneen käyttäjän osalta. Eli voit vain muokata käyttäjää, millä olet parhaimmillaan kirjautuneena. Jatkossa olisi fiksua hakea käyttäjän tiedot suoraan formien INPUT kenttiin.
-        </p>
-
-        <pre><code>
+<!--         <pre><code>
           
           # Update user's own data (requires token)
           PUT http://127.0.0.1:3000/api/users/
@@ -119,47 +104,37 @@
             "password": "test-pw-update4",
             "email": "update4@example.com"
           }
-          </code></pre>
-              <!-- tänne formi -->
+          </code></pre> -->
+
+        <form class="addform">
+          <!-- tänne formi -->
           <!-- https://www.w3schools.com/css/css_form.asp -->
           <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding -->
 
           <!-- formin avulla testaamme create ja update user reittejä -->
-        <form class="addform">
-          <label for="username">Username</label>
-          <input type="text" id="fname" name="fname" placeholder="username">
-          <label for="password">Password</label>
-          <input type="password" name="password" placeholder="New password" />
-          <label for="email">Enter your email:</label>
-          <input type="email" id="email" name="email" placeholder="@">
-
         </form>
-        <button class="update" >Update information </button>
-
-        
       </div>
     </div>
 
     <dialog class="info_dialog">
       <p>
-        <!-- tänne haetaan yksittäinen valittu käyttäjät -->      
-        <div>UserID: <span>Id</span></div>
+        <!-- tänne haetaan yksittäinen valittu käyttäjät -->
+        <!-- <div>UserID: <span>Id</span></div>
         <div>UserName: <span>Username</span></div>
         <div>Email: <span>Email</span></div>
-        <div>Role: <span>Role</span></div> 
+        <div>Role: <span>Role</span></div>  -->
       </p>
       <button autofocus>Close</button>
     </dialog>
 
-    <h3>Kotitehtävä, tee ja testaa kaikki: /api/entries</h3>
+<!--     <h3>Yksilötehtävän: /api/entries</h3>
 
     <p>Hae käyttäjän (user: 1) entires tiedot ja console.log</p>
     <pre>
       # Get entries by id
       GET http://localhost:3000/api/entries/:id
     </pre>
-    <button class="get_entry">Hae (user:1) entries</button>
+    <button class="get_entry">Hae (user:1) entries</button> -->
 
-
   </body>
 </html>

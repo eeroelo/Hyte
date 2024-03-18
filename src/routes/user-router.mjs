@@ -37,3 +37,4 @@ userRouter
   .delete(authenticateToken, deleteUser);
 
 export default userRouter;
+
