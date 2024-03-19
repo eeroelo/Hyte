@@ -25,5 +25,13 @@
     "express-validator": "^7.0.1",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.2"
+  },
+  "apidoc": {
+    "title": "My API docs",
+    "url": "https://example.com/api/v1",
+    "order": [
+      "Authentication",
+      "User"
+    ]
   }
 }
