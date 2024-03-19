@@ -17,6 +17,7 @@ Linkki front endiin [nettisivu](https://eedns.northeurope.cloudapp.azure.com/sta
 Linkki back endiin [backkari](https://github.com/eeroelo/Hyte/tree/master)
 
 Database
+
 ![Db_1](https://github.com/eeroelo/Hyte/assets/111982645/8d2e2e38-a552-4d1b-9d3d-70f5e0ecd70e)
 
 Tällä hetkellä julkaistu sovellus käyttää tauluja users ja diaryentries. Betassa olevaan versiion on työn alla implikoida muutkin taulut käyttöön.
